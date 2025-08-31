@@ -1,0 +1,1 @@
+puts gets =~ /#{Regexp.escape(gets).gsub(/\\\?/,".").gsub(/~/, ".*")}/ ? "MATCH":"FAIL"
